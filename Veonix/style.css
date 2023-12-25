@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(/fonts/Gilroy/stylesheet.css);
+}
+
+body {
+  width: 1440px;
+  height: 810px;
+  background-image: url(/img/Rectangle\ 6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* menu */
+
+.logo {
+  margin-left: 101px;
+}
+
+.menu {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+ul {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  gap: 19px;
+}
+
+.btn {
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(312deg, #ffc354 2.08%, #ff591f 100%),
+    linear-gradient(270deg, #ffa500 0%, #fe4e10 100%);
+}
+
+.info {
+  width: 1239px;
+  height: 187px;
+  margin: 65px 101px 83px 100px;
+  color: #fff;
+  font-family: Gilroy-medium;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.sub {
+  position: absolute;
+  bottom: auto;
+  right: 831px;
+  top: 377px;
+  left: 100px;
+  margin: 0;
+  width: 509px;
+  height: 26px;
+  color: #FFF;
+  font-family: Gilroy-Light;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+}
+
+.grad {
+  background: linear-gradient(312deg, #ffc354 2.08%, #ff591f 100%),
+    linear-gradient(270deg, #ffa500 0%, #fe4e10 100%);
+  -webkit-background-clip: text;
+  /* для поддержки в браузерах Safari/Chrome */
+  -moz-background-clip: text;
+  /* для поддержки в браузерах Firefox */
+  background-clip: text;
+  color: transparent;
+}
+
+.sup {
+  bottom: auto;
+  color: #FFF;
+  height: 50px;
+  left: 100px;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 704px;
+  top: 544px;
+  width: 636px;
+}
+
+/*carousel*/
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 1440px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  margin-left: 13px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #fff;
+}
+
+.arrow,
+.arrow {
+  position: absolute;
+  display: flex;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(312deg, #FFC354 2.08%, #FF591F 100%), linear-gradient(270deg, #FFA500 0%, #FE4E10 100%);
+  cursor: pointer;
+}
+
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  12.5% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  37.5% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+
+  62.5% {
+    transform: translateX(-200%);
+  }
+
+  75% {
+    transform: translateX(-300%);
+  }
+
+  87.5% {
+    transform: translateX(-300%);
+  }
+
+  100% {
+    transform: translateX(-400%);
+  }
+}
